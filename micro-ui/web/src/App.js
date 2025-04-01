@@ -10,6 +10,7 @@ import { initDSSComponents } from "@egovernments/digit-ui-module-dss";
 import { initEngagementComponents } from "@egovernments/digit-ui-module-engagement";
 import { initHRMSComponents } from "@egovernments/digit-ui-module-hrms";
 import { initUtilitiesComponents } from "@egovernments/digit-ui-module-utilities";
+import { initWaterComponents } from "@egovernments/digit-ui-module-water";
 import { UICustomizations } from "./Customisations/UICustomizations";
 import { initWorkbenchComponents } from "@egovernments/digit-ui-module-workbench";
 import {
@@ -26,8 +27,8 @@ const enabledModules = [
   "HRMS",
   "Engagement",
   "Workbench",
-  "PGR"
-
+  "PGR",
+  "Water"
 ];
 
 const moduleReducers = (initData) => ({
@@ -47,6 +48,7 @@ const initDigitUI = () => {
   initEngagementComponents();
   initUtilitiesComponents();
   initWorkbenchComponents();
+  initWaterComponents();
 
   window.Digit.Customizations = {
     PGR: {},
